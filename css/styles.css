@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 79em) {
+  html {
+    font-size: 55.5%;
+  }
+}
+@media (max-width: 70em) {
+  html {
+    font-size: 53.5%;
+  }
+}
+@media (max-width: 67em) {
+  html {
+    font-size: 50.5%;
+  }
+}
+@media (max-width: 62em) {
+  html {
+    font-size: 48.5%;
+  }
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  line-height: 1.1;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: #f7f8fd;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 8rem auto 2rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 15fr 40fr;
+}
+.container--inner {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.2rem;
+}
+.container--inner--sidbar {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.137));
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.flex--column {
+  flex-direction: column;
+  gap: 1rem;
+}
+.flex--justify {
+  justify-content: center;
+}
+.flex--sb {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  align-content: start;
+  gap: 2rem;
+}
+.grid--1-col {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.list--row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  row-gap: 4rem;
+}
+
+.btn {
+  background-color: #f2f4ff;
+  text-decoration: none;
+  color: #4661e6;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.btn:hover {
+  background-color: #4661e6;
+  color: #f2f4ff;
+  stroke: white !important;
+}
+.btn--add-fedback {
+  background-color: #ad1fea;
+  color: #f2f4ff;
+  padding: 1rem 3rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.suggestions--header {
+  background-color: #373f68;
+  color: white;
+}
+
+.oval {
+  font-size: 5.3rem;
+}
+
+.roadmap .view {
+  color: #4661e6;
+}
+
+.suggestions {
+  display: grid;
+  align-content: start;
+  gap: 2rem;
+}
+
+.feedback-title {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.feedback-text {
+  margin-bottom: 2rem;
+}
+
+.feedback .upvote {
+  align-self: start;
+  cursor: pointer;
+  stroke: #4661e6;
+}
+.feedback .upvote:hover {
+  stroke: white;
+}
+
+.feedback .comments {
+  margin-left: auto;
+}
+.feedback .comments img {
+  cursor: pointer;
+}
+.replies-container {
+  margin-left: 2rem;
+}
+
+.comment,
+.reply {
+  margin-left: 2rem;
+}

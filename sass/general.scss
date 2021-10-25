@@ -1,0 +1,130 @@
+@import '_variables';
+@import '_mixins';
+@import '_utilities';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  @include respond('laptop-wide') {
+    font-size: 55.5%;
+  }
+  @include respond('laptop') {
+    font-size: 53.5%;
+  }
+  @include respond('tablet-land') {
+    font-size: 50.5%;
+  }
+  @include respond('tablet') {
+    font-size: 48.5%;
+  }
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  line-height: 1.1;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: $background-color;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 8rem auto 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 15fr 40fr;
+
+  &--inner {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1.2rem;
+
+    &--sidbar {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.137));
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &--column {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &--justify {
+    justify-content: center;
+  }
+  &--sb {
+    justify-content: space-between;
+  }
+}
+
+.grid {
+  display: grid;
+  // align-items: center;
+  align-content: start;
+  gap: 2rem;
+
+  &--1-col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &--2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &--3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &--4-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &--row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    row-gap: 4rem;
+  }
+}
+
+.btn {
+  background-color: $button-bg;
+  text-decoration: none;
+  color: $button-primary-color;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+
+  &:hover {
+    background-color: $button-primary-color;
+    color: $button-bg;
+    stroke: white !important;
+  }
+
+  &--add-fedback {
+    background-color: $primary-purple;
+    color: $button-bg;
+    padding: 1rem 3rem;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}

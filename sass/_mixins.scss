@@ -1,0 +1,15 @@
+// @use "sass:map";
+
+$breakpoints: (
+  "phone": 48em,
+  "tablet": 62em,
+  "tablet-land": 67em,
+  "laptop": 70em,
+  "laptop-wide": 79em,
+);
+
+@mixin respond($device-name) {
+  @media (max-width: map-get($breakpoints, $device-name)) {
+    @content;
+  }
+}

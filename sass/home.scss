@@ -1,0 +1,50 @@
+@import '_variables';
+@import '_mixins';
+@import '_utilities';
+
+.suggestions--header {
+  background-color: $suggestion-title-bg;
+  color: white;
+}
+
+.oval {
+  font-size: 5.3rem;
+}
+
+.roadmap {
+  & .view {
+    color: $button-primary-color;
+  }
+}
+
+.suggestions {
+  display: grid;
+  align-content: start;
+  gap: 2rem;
+}
+
+.feedback {
+  &-title {
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  &-text {
+    margin-bottom: 2rem;
+  }
+
+  & .upvote {
+    align-self: start;
+    cursor: pointer;
+    stroke: $button-primary-color;
+    &:hover {
+      stroke: white;
+    }
+  }
+
+  & .comments {
+    margin-left: auto;
+    img {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Product feedback app</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="sidebar grid grid--3-row">
+        <div class="title container--inner container--inner--sidbar">
+          <h1 class="heading-primary">Feedback App</h1>
+          <p class="heading-secondary">Feedback Board</p>
+          <figure
+            data-id="fdsa"
+            data-name="artrix"
+            class="currentAcc flex"
+            style="margin-top: 2rem"
+          >
+            <img
+              alt="TheArtrix's avatar"
+              loading="lazy"
+              data-hook="user_avatar"
+              style="border-radius: 50%; border: 1.1px solid black"
+              width="80"
+              height="80"
+              src="https://a.deviantart.net/avatars-big/t/h/theartrix.png?2"
+              class="_1R7CO"
+            />
+            <p>The Artrix</p>
+          </figure>
+        </div>
+        <div class="tags container--inner container--inner--sidbar">
+          <ul class="tags list list--row">
+            <li><a class="btn" href="#">All</a></li>
+            <li><a class="btn" href="#">UI</a></li>
+            <li><a class="btn" href="#">UX</a></li>
+            <li><a class="btn" href="#">Enhancement</a></li>
+            <li><a class="btn" href="#">Bug</a></li>
+            <li><a class="btn" href="#">Feature</a></li>
+          </ul>
+        </div>
+        <div class="roadmap container--inner container--inner--sidbar grid">
+          <header class="flex flex--sb">
+            <h2 class="heading-primary">Roadmap</h2>
+            <a class="view" href="#">View</a>
+          </header>
+          <ul class="roadmap--sum list">
+            <li class="flex flex--sb">
+              <div class="flex flex--sb">
+                <span class="oval oval--type">⋅</span>
+                <p class="status">Planned</p>
+              </div>
+              <span class="number status--planned">0</span>
+            </li>
+            <li class="flex flex--sb">
+              <div class="flex flex--sb">
+                <span class="oval oval--type">⋅</span>
+                <p class="status">In-Proggress</p>
+              </div>
+              <span class="number status--in-progress">0</span>
+            </li>
+            <li class="flex flex--sb">
+              <div class="flex flex--sb">
+                <span class="oval oval--type">⋅</span>
+                <p class="status">Live</p>
+              </div>
+              <span class="number status--live">0</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <main class="suggestions">
+        <header class="suggestions--header container--inner flex flex--sb">
+          <div class="flex">
+            <img
+              class="lightbulb"
+              src="./assets/suggestions/icon-suggestions.svg"
+            />
+            <p>
+              <strong
+                ><span class="number-of-suggestions">6</span>
+                Suggestions</strong
+              >
+            </p>
+            <p>
+              Sort by : Most Upvotes !
+              <span><img src="assets/shared/icon-arrow-down.svg" /></span>
+            </p>
+            <div data-page="0" class="toggles flex flex--justify">
+              <button class="toggle--prev">Prev</button>
+              <button class="toggle--next">Next</button>
+            </div>
+          </div>
+          <a class="btn btn--add-fedback" href="#">
+            <span><img src="assets/shared/icon-plus.svg" /></span> Add
+            Feedback</a
+          >
+        </header>
+
+        <section class="suggestions-feedbacks grid">
+          <div style="display: none" class="feedback container--inner flex">
+            <div class="upvote btn flex flex--column flex--justify">
+              <p>
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 6l4-4 4 4"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </p>
+              <p>020</p>
+            </div>
+
+            <div class="feedback-content">
+              <h2 class="feedback-title heading-primary">Give me a title</h2>
+              <p class="feedback-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae aut ratione.
+              </p>
+              <div class="feedback-tags list list--row">
+                <li><a class="btn" href="#">Feature</a></li>
+              </div>
+            </div>
+            <div class="comments flex">
+              <img
+                type="image/svg+xml"
+                src="./assets/shared/icon-comments.svg"
+              />
+              <span>2</span>
+            </div>
+            <div class="comments-container grid">
+              <div class="comment flex">
+                <div class="replies-container grid"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
