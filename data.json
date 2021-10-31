@@ -325,16 +325,19 @@
             "image": "./assets/user-images/atlas.png",
             "name": "Atlas",
             "username": "iamhotash"
-          }
-        },
-        {
-          "id": 17,
-          "content": "Don't bother them atlas... they are worshiping the Worm..",
-          "user": {
-            "image": "./assets/user-images/ash.png",
-            "name": "Ash",
-            "username": "iamhotash"
-          }
+          },
+          "replies": [
+            {
+              "id": 17,
+              "content": "Don't bother them atlas... they are worshiping the Worm..",
+              "replyingTo": "atlas",
+              "user": {
+                "image": "./assets/user-images/ash.png",
+                "name": "Ash",
+                "username": "iamhotash"
+              }
+            }
+          ]
         }
       ]
     }

@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <script defer type="module" src="./js/sendForm.js"></script>
   <title>Frontend Mentor | Product feedback app</title>
 </head>
 
 <body>
-  Go Back
+  <!-- Go Back
 
   Create New Feedback
 
@@ -30,6 +30,24 @@
   Include any specific comments on what should be improved, added, etc.
 
   Cancel
-  Add Feedback
+  Add Feedback -->
+  <!-- this.id;
+  this.title = title;
+  this.category = category;
+  this.status = status;
+  this.desc = desc;
+  this.upvotes = 0; -->
+  <form>
+    <label for="title" >Title</label>
+    <input type="text" id="title">
+    <label for="category" >Category</label>
+    <input type="text" id="category">
+    <label for="status" >Status</label>
+    <input type="text" id="status">
+    <label for="desc" >Description</label>
+    <input type="text" id="desc">
+    <button class="btn" id="formBtn">Click To Send</button>
+  </form>
+
 </body>
 <html
